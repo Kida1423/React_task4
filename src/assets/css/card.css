@@ -1,0 +1,120 @@
+.card{
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+
+}
+
+.card .nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card .img{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card .img img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card .details{
+    text-align: center;
+    width: 100%;
+}
+.card .details .title{
+    font-size: 1.2rem;
+}
+.card .details .artist{
+    color: #ddd;
+    margin-top: 2px;
+}
+.card .progress{
+    margin-top: 15px;
+}
+
+.card .progress input{
+    width: 100%;
+    height: 4px;
+}
+
+.card .timer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    width: 100%;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+.card .controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card .controls #prev,
+.card .controls #next{
+    font-size: 1.5rem;
+}
+
+.card .controls .play{
+    width: 3.2rem;
+    height: 3.2rem;
+    background: linear-gradient(#fff 0%, #cecaca 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card .controls .play::before{
+    content: '';
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    border-radius: inherit;
+}
+
+.card .controls .volume{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    z-index: 5;
+    transition: bottom 0.2s linear;
+    gap: 5px;
+}
+
+.card .controls .volume.show{
+    bottom: 0;
+}
+
+.card .controls .volume input{
+    width: 100%;
+    height: 4px;
+}
+i{
+    cursor: pointer;
+}
